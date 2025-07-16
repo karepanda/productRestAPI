@@ -29,6 +29,7 @@ class ProductTestApiApplicationTests {
 
     @Test
     public void testGetProduct() {
+        System.out.println("Base URL: " + baseURl);
         TestRestTemplate restTemplate = new TestRestTemplate();
         Product product = restTemplate.getForObject(baseURl + "6", Product.class);
 
