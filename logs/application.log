@@ -36,3 +36,12 @@
 2025-07-16T12:35:03.277+02:00  INFO 19900 --- [main] o.a.c.p.ProductTestApiApplication        : Started ProductTestApiApplication in 3.351 seconds (process running for 4.023)
 2025-07-16T12:35:14.037+02:00  INFO 19900 --- [qtp2055472834-62] o.a.c.p.controllers.ProductController    : Getting product with id: 6
 2025-07-16T17:58:40.343+02:00  WARN 19900 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4h50m38s344ms309µs300ns).
+2025-07-16T17:59:37.779+02:00  INFO 19900 --- [SpringApplicationShutdownHook] o.s.b.w.embedded.jetty.GracefulShutdown  : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-16T17:59:37.780+02:00  INFO 19900 --- [jetty-shutdown] o.s.b.w.embedded.jetty.GracefulShutdown  : Graceful shutdown complete
+2025-07-16T17:59:37.784+02:00  INFO 19900 --- [SpringApplicationShutdownHook] o.e.jetty.server.AbstractConnector       : Stopped ServerConnector@4d10f182{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-07-16T17:59:37.786+02:00  INFO 19900 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-16T17:59:37.789+02:00  INFO 19900 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-16T17:59:37.798+02:00  INFO 19900 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-16T17:59:37.799+02:00  INFO 19900 --- [SpringApplicationShutdownHook] org.eclipse.jetty.server.Server          : Stopped oejs.Server@26fb4d06{STOPPING}[12.0.22,sto=0]
+2025-07-16T17:59:37.803+02:00  INFO 19900 --- [SpringApplicationShutdownHook] o.e.j.s.h.ContextHandler.application     : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2025-07-16T17:59:37.806+02:00  INFO 19900 --- [SpringApplicationShutdownHook] o.e.j.e.servlet.ServletContextHandler    : Stopped osbwej.JettyEmbeddedWebAppContext@463561c5{application,/productapi,b=file:/C:/Users/karel/AppData/Local/Temp/jetty-docbase.8080.114427081966334871/,a=AVAILABLE,h=oeje10s.SessionHandler@659feb22{STOPPED}}
