@@ -1,23 +1,23 @@
-2025-07-17T18:04:51.040+02:00  INFO 28348 --- [main] o.a.c.p.ProductTestApiApplication        : Starting ProductTestApiApplication using Java 23.0.1 with PID 28348 (D:\karel\Examples\productTestAPI\target\classes started by karel in D:\karel\Examples\productTestAPI)
-2025-07-17T18:04:51.042+02:00  INFO 28348 --- [main] o.a.c.p.ProductTestApiApplication        : No active profile set, falling back to 1 default profile: "default"
-2025-07-17T18:04:51.765+02:00  INFO 28348 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-07-17T18:04:51.810+02:00  INFO 28348 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 1 JPA repository interface.
-2025-07-17T18:04:52.212+02:00  INFO 28348 --- [main] o.s.b.w.e.j.JettyServletWebServerFactory : Server initialized with port: 8080
-2025-07-17T18:04:52.217+02:00  INFO 28348 --- [main] org.eclipse.jetty.server.Server          : jetty-12.0.22; built: 2025-06-02T15:25:31.946Z; git: 335c9ab44a5591f0ea941bf350e139b8c4f5537c; jvm 23.0.1+11-39
-2025-07-17T18:04:52.246+02:00  INFO 28348 --- [main] o.e.j.s.h.ContextHandler.application     : Initializing Spring embedded WebApplicationContext
-2025-07-17T18:04:52.246+02:00  INFO 28348 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1135 ms
-2025-07-17T18:04:52.306+02:00  INFO 28348 --- [main] o.e.j.session.DefaultSessionIdManager    : Session workerName=node0
-2025-07-17T18:04:52.311+02:00  INFO 28348 --- [main] o.e.jetty.server.handler.ContextHandler  : Started osbwej.JettyEmbeddedWebAppContext@591a4f8e{application,/productapi,b=file:/C:/Users/karel/AppData/Local/Temp/jetty-docbase.8080.7144911446878998161/,a=AVAILABLE,h=oeje10s.SessionHandler@53ed80d3{STARTED}}
-2025-07-17T18:04:52.312+02:00  INFO 28348 --- [main] o.e.j.e.servlet.ServletContextHandler    : Started osbwej.JettyEmbeddedWebAppContext@591a4f8e{application,/productapi,b=file:/C:/Users/karel/AppData/Local/Temp/jetty-docbase.8080.7144911446878998161/,a=AVAILABLE,h=oeje10s.SessionHandler@53ed80d3{STARTED}}
-2025-07-17T18:04:52.313+02:00  INFO 28348 --- [main] org.eclipse.jetty.server.Server          : Started oejs.Server@7d78f3d5{STARTING}[12.0.22,sto=0] @2619ms
-2025-07-17T18:04:52.377+02:00  INFO 28348 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-07-17T18:04:52.765+02:00  INFO 28348 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7c5df615
-2025-07-17T18:04:52.767+02:00  INFO 28348 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-07-17T18:04:52.802+02:00  INFO 28348 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-07-17T18:04:52.838+02:00  INFO 28348 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
-2025-07-17T18:04:52.864+02:00  INFO 28348 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-07-17T18:04:53.118+02:00  INFO 28348 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-07-17T18:04:53.201+02:00  INFO 28348 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-07-18T14:01:16.682+02:00  INFO 6816 --- [main] o.a.c.p.ProductTestApiApplication        : Starting ProductTestApiApplication using Java 23.0.1 with PID 6816 (D:\karel\Examples\productTestAPI\target\classes started by karel in D:\karel\Examples\productTestAPI)
+2025-07-18T14:01:16.684+02:00  INFO 6816 --- [main] o.a.c.p.ProductTestApiApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-07-18T14:01:17.476+02:00  INFO 6816 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-18T14:01:17.536+02:00  INFO 6816 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 1 JPA repository interface.
+2025-07-18T14:01:18.012+02:00  INFO 6816 --- [main] o.s.b.w.e.j.JettyServletWebServerFactory : Server initialized with port: 8080
+2025-07-18T14:01:18.018+02:00  INFO 6816 --- [main] org.eclipse.jetty.server.Server          : jetty-12.0.22; built: 2025-06-02T15:25:31.946Z; git: 335c9ab44a5591f0ea941bf350e139b8c4f5537c; jvm 23.0.1+11-39
+2025-07-18T14:01:18.056+02:00  INFO 6816 --- [main] o.e.j.s.h.ContextHandler.application     : Initializing Spring embedded WebApplicationContext
+2025-07-18T14:01:18.056+02:00  INFO 6816 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1320 ms
+2025-07-18T14:01:18.191+02:00  INFO 6816 --- [main] o.e.j.session.DefaultSessionIdManager    : Session workerName=node0
+2025-07-18T14:01:18.197+02:00  INFO 6816 --- [main] o.e.jetty.server.handler.ContextHandler  : Started osbwej.JettyEmbeddedWebAppContext@3b4086c1{application,/productapi,b=file:/C:/Users/karel/AppData/Local/Temp/jetty-docbase.8080.8397873314541441230/,a=AVAILABLE,h=oeje10s.SessionHandler@58aa1d72{STARTED}}
+2025-07-18T14:01:18.198+02:00  INFO 6816 --- [main] o.e.j.e.servlet.ServletContextHandler    : Started osbwej.JettyEmbeddedWebAppContext@3b4086c1{application,/productapi,b=file:/C:/Users/karel/AppData/Local/Temp/jetty-docbase.8080.8397873314541441230/,a=AVAILABLE,h=oeje10s.SessionHandler@58aa1d72{STARTED}}
+2025-07-18T14:01:18.200+02:00  INFO 6816 --- [main] org.eclipse.jetty.server.Server          : Started oejs.Server@7d8cf9ac{STARTING}[12.0.22,sto=0] @2620ms
+2025-07-18T14:01:18.300+02:00  INFO 6816 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-18T14:01:18.644+02:00  INFO 6816 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@472c9f88
+2025-07-18T14:01:18.645+02:00  INFO 6816 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-18T14:01:18.677+02:00  INFO 6816 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-18T14:01:18.713+02:00  INFO 6816 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-07-18T14:01:18.740+02:00  INFO 6816 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-18T14:01:18.965+02:00  INFO 6816 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-18T14:01:19.046+02:00  INFO 6816 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 8.0.41
@@ -25,22 +25,30 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-07-17T18:04:53.823+02:00  INFO 28348 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-07-17T18:04:53.827+02:00  INFO 28348 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-07-17T18:04:53.997+02:00  WARN 28348 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-07-17T18:04:54.273+02:00  INFO 28348 --- [main] o.e.j.s.h.ContextHandler.application     : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-07-17T18:04:54.273+02:00  INFO 28348 --- [main] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-07-17T18:04:54.275+02:00  INFO 28348 --- [main] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2025-07-17T18:04:54.292+02:00  INFO 28348 --- [main] o.e.jetty.server.AbstractConnector       : Started ServerConnector@7f4eef84{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
-2025-07-17T18:04:54.295+02:00  INFO 28348 --- [main] o.s.b.web.embedded.jetty.JettyWebServer  : Jetty started on port 8080 (http/1.1) with context path '/productapi'
-2025-07-17T18:04:54.300+02:00  INFO 28348 --- [main] o.a.c.p.ProductTestApiApplication        : Started ProductTestApiApplication in 3.808 seconds (process running for 4.606)
-2025-07-17T18:05:03.480+02:00  INFO 28348 --- [qtp904612411-44] o.a.c.p.controllers.ProductController    : Getting product with id: 6
-2025-07-17T18:08:41.126+02:00  INFO 28348 --- [SpringApplicationShutdownHook] o.s.b.w.embedded.jetty.GracefulShutdown  : Commencing graceful shutdown. Waiting for active requests to complete
-2025-07-17T18:08:41.126+02:00  INFO 28348 --- [jetty-shutdown] o.s.b.w.embedded.jetty.GracefulShutdown  : Graceful shutdown complete
-2025-07-17T18:08:41.131+02:00  INFO 28348 --- [SpringApplicationShutdownHook] o.e.jetty.server.AbstractConnector       : Stopped ServerConnector@7f4eef84{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
-2025-07-17T18:08:41.133+02:00  INFO 28348 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-07-17T18:08:41.134+02:00  INFO 28348 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-07-17T18:08:41.141+02:00  INFO 28348 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-07-17T18:08:41.142+02:00  INFO 28348 --- [SpringApplicationShutdownHook] org.eclipse.jetty.server.Server          : Stopped oejs.Server@7d78f3d5{STOPPING}[12.0.22,sto=0]
-2025-07-17T18:08:41.144+02:00  INFO 28348 --- [SpringApplicationShutdownHook] o.e.j.s.h.ContextHandler.application     : Destroying Spring FrameworkServlet 'dispatcherServlet'
-2025-07-17T18:08:41.146+02:00  INFO 28348 --- [SpringApplicationShutdownHook] o.e.j.e.servlet.ServletContextHandler    : Stopped osbwej.JettyEmbeddedWebAppContext@591a4f8e{application,/productapi,b=file:/C:/Users/karel/AppData/Local/Temp/jetty-docbase.8080.7144911446878998161/,a=AVAILABLE,h=oeje10s.SessionHandler@53ed80d3{STOPPED}}
+2025-07-18T14:01:19.646+02:00  INFO 6816 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-18T14:01:19.649+02:00  INFO 6816 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-18T14:01:19.824+02:00  WARN 6816 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-18T14:01:20.264+02:00  WARN 6816 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 8cc3569e-7096-4963-bb74-81cce5e7c657
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-07-18T14:01:20.271+02:00  INFO 6816 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-07-18T14:01:20.408+02:00  INFO 6816 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoints beneath base path '/actuator'
+2025-07-18T14:01:20.529+02:00  INFO 6816 --- [main] o.e.j.s.h.ContextHandler.application     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-18T14:01:20.530+02:00  INFO 6816 --- [main] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-18T14:01:20.531+02:00  INFO 6816 --- [main] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-07-18T14:01:20.549+02:00  INFO 6816 --- [main] o.e.jetty.server.AbstractConnector       : Started ServerConnector@255aa5f7{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-07-18T14:01:20.550+02:00  INFO 6816 --- [main] o.s.b.web.embedded.jetty.JettyWebServer  : Jetty started on port 8080 (http/1.1) with context path '/productapi'
+2025-07-18T14:01:20.561+02:00  INFO 6816 --- [main] o.a.c.p.ProductTestApiApplication        : Started ProductTestApiApplication in 4.312 seconds (process running for 4.98)
+2025-07-18T18:16:38.895+02:00  WARN 6816 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h49m50s132ms67µs800ns).
+2025-07-18T18:16:55.771+02:00  INFO 6816 --- [SpringApplicationShutdownHook] o.s.b.w.embedded.jetty.GracefulShutdown  : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-18T18:16:55.772+02:00  INFO 6816 --- [jetty-shutdown] o.s.b.w.embedded.jetty.GracefulShutdown  : Graceful shutdown complete
+2025-07-18T18:16:55.778+02:00  INFO 6816 --- [SpringApplicationShutdownHook] o.e.jetty.server.AbstractConnector       : Stopped ServerConnector@255aa5f7{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-07-18T18:16:55.785+02:00  INFO 6816 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-18T18:16:55.788+02:00  INFO 6816 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-18T18:16:55.799+02:00  INFO 6816 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-18T18:16:55.801+02:00  INFO 6816 --- [SpringApplicationShutdownHook] org.eclipse.jetty.server.Server          : Stopped oejs.Server@7d8cf9ac{STOPPING}[12.0.22,sto=0]
+2025-07-18T18:16:55.807+02:00  INFO 6816 --- [SpringApplicationShutdownHook] o.e.j.s.h.ContextHandler.application     : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2025-07-18T18:16:55.810+02:00  INFO 6816 --- [SpringApplicationShutdownHook] o.e.j.e.servlet.ServletContextHandler    : Stopped osbwej.JettyEmbeddedWebAppContext@3b4086c1{application,/productapi,b=file:/C:/Users/karel/AppData/Local/Temp/jetty-docbase.8080.8397873314541441230/,a=AVAILABLE,h=oeje10s.SessionHandler@58aa1d72{STOPPED}}
