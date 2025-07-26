@@ -5,48 +5,55 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 class ProductTestApiApplicationTests {
 
     @Value("${producttestapi.services.url}")
-    private String baseURl;
+    private String baseURL;
 
-    @Test
-    public void testCreateProduct() {
-        TestRestTemplate restTemplate = new TestRestTemplate();
-        Product newProduct = new Product();
-        newProduct.setName("iPhone 16");
-        newProduct.setDescription("Latest Apple iPhone");
-        newProduct.setPrice(1999);
-
-        Product createdProduct = restTemplate.postForObject(baseURl, newProduct, Product.class);
-
-        assertNotNull(createdProduct);
-        assertEquals("iPhone 16", createdProduct.getName());
+    private TestRestTemplate getAuthenticatedRestTemplate() {
+        return new TestRestTemplate("admin", "0000");
     }
 
-    @Test
-    public void testGetProduct() {
-        System.out.println("Base URL: " + baseURl);
-        TestRestTemplate restTemplate = new TestRestTemplate();
-        Product product = restTemplate.getForObject(baseURl + "6", Product.class);
 
+    @Test
+    void testGetProduct() {
+        System.out.println(baseURL);
+        TestRestTemplate restTemplate = getAuthenticatedRestTemplate();
+        Product product = restTemplate.getForObject(baseURL + "6", Product.class);
         assertNotNull(product);
         assertEquals("iPhone 16", product.getName());
     }
 
+    @Test
+    void testCreateProduct() {
+        TestRestTemplate restTemplate = getAuthenticatedRestTemplate();
+        Product product = new Product();
+        product.setName("Samsung Mobile");
+        product.setDescription("Its Awesome");
+        product.setPrice(1000);
+
+        try{
+            Product newProduct = restTemplate.postForObject(baseURL, product, Product.class);
+            assertEquals(product.getName(), newProduct.getName());
+            assertEquals(1000, newProduct.getPrice());
+            System.out.println("Product created with ID: " + newProduct.getId());
+        }catch (Exception e){
+            System.err.println("Error to created product " + e.getMessage());
+            throw e;
+        }
+
+    }
 
     @Test
-    public void testUpdateProduct() {
-        TestRestTemplate restTemplate = new TestRestTemplate();
-        Product product = restTemplate.getForObject(baseURl + "6", Product.class);
-
-        product.setPrice(900);
-
-        restTemplate.put("http://localhost:8080/productapi/products/", product);
-
+    void testUpdateProduct() {
+        TestRestTemplate restTemplate = getAuthenticatedRestTemplate();
+        Product product = restTemplate.getForObject(baseURL + "8", Product.class);
+        product.setPrice(1400);
+        restTemplate.put(baseURL, product);
     }
 
 }

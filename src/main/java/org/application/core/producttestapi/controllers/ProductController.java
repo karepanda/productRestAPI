@@ -5,6 +5,9 @@ import org.application.core.producttestapi.repository.ProductRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -15,7 +18,7 @@ public class ProductController {
     @Autowired
     ProductRepository repository;
 
-    private static final Logger LOOGER = LoggerFactory.getLogger(ProductController.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(ProductController.class);
 
    @GetMapping("/products/")
     public List<Product> getAllProducts() {
@@ -23,9 +26,11 @@ public class ProductController {
     }
 
     @GetMapping("/products/{id}")
+    @Transactional(readOnly = true)
+    @Cacheable("products-cache")
     public Product getProduct(@PathVariable("id") int id){
-       LOOGER.info("Getting product with id: " + id);
-        return repository.findById(id).get();
+       LOGGER.info("Getting product with id: {}", id);
+       return repository.findById(id).orElse(null);
     }
 
     @PostMapping("/products/")
@@ -39,6 +44,7 @@ public class ProductController {
     }
 
     @DeleteMapping("/products/{id}")
+    @CacheEvict("products-cache")
     public void deleteProduct(@PathVariable("id") int id){
        repository.deleteById(id);
     }
