@@ -7,15 +7,16 @@ import org.application.core.producttestapi.repository.ProductRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.http.MediaType;
 import org.springframework.test.context.bean.override.mockito.MockitoBean;
 import org.springframework.test.web.servlet.MockMvc;
 
-
 import java.util.List;
 
-
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.doNothing;
 import static org.mockito.Mockito.when;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 
@@ -50,6 +51,45 @@ class ProductControllerTest {
             .andExpect(status().isOk())
             .andExpect(content().json(objectWriter.writeValueAsString(products)));
     }
+
+    @Test
+    public void testCreateProduct() throws Exception {
+        Product product = buildProduct();
+        when(repository.save(any())).thenReturn(product);
+        ObjectWriter objectWriter = new ObjectMapper().writer().withDefaultPrettyPrinter();
+
+        mockMvc.perform(post(PRODUCTS_URL)
+                .contextPath(PRODUCT_CONTEXT_PATH)
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(objectWriter.writeValueAsString(product))).andExpect(status().isOk())
+                .andExpect(content().json(objectWriter.writeValueAsString(product)));
+    }
+
+    @Test
+    public void testUpdateProduct() throws Exception {
+        Product product = buildProduct();
+        product.setPrice(1200);
+        when(repository.save(any())).thenReturn(product);
+        ObjectWriter objectWriter = new ObjectMapper().writer().withDefaultPrettyPrinter();
+
+        mockMvc.perform(put(PRODUCTS_URL)
+                .contextPath(PRODUCT_CONTEXT_PATH)
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(objectWriter.writeValueAsString(product)))
+                .andExpect(status().isOk())
+                .andExpect(content().json(objectWriter.writeValueAsString(product)));
+    }
+
+    @Test
+    public void testDeleteProduct() throws Exception {
+
+        doNothing().when(repository).deleteById(PRODUCT_ID);
+
+        mockMvc.perform(delete(PRODUCTS_URL + PRODUCT_ID)
+                .contextPath(PRODUCT_CONTEXT_PATH))
+                .andExpect(status().isOk());
+    }
+
 
     private static Product buildProduct() {
         Product product = new Product();
