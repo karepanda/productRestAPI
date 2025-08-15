@@ -1,6 +1,18 @@
-2025-08-08T20:40:34.075+02:00  INFO 7304 --- [main] o.a.c.p.c.ProductControllerTest          : Starting ProductControllerTest using Java 23.0.1 with PID 7304 (started by karel in D:\karel\Examples\productTestAPI)
-2025-08-08T20:40:34.084+02:00  INFO 7304 --- [main] o.a.c.p.c.ProductControllerTest          : No active profile set, falling back to 1 default profile: "default"
-2025-08-08T20:40:36.226+02:00  INFO 7304 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2025-08-08T20:40:36.227+02:00  INFO 7304 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2025-08-08T20:40:36.229+02:00  INFO 7304 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
-2025-08-08T20:40:36.267+02:00  INFO 7304 --- [main] o.a.c.p.c.ProductControllerTest          : Started ProductControllerTest in 2.689 seconds (process running for 4.26)
+2025-08-15T13:20:53.974+02:00  INFO 23284 --- [main] o.a.c.p.c.ProductControllerTest          : Starting ProductControllerTest using Java 23.0.1 with PID 23284 (started by karel in D:\karel\Examples\productTestAPI)
+2025-08-15T13:20:53.978+02:00  INFO 23284 --- [main] o.a.c.p.c.ProductControllerTest          : No active profile set, falling back to 1 default profile: "default"
+2025-08-15T13:20:55.996+02:00  INFO 23284 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-08-15T13:20:55.996+02:00  INFO 23284 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-08-15T13:20:55.998+02:00  INFO 23284 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-08-15T13:20:56.030+02:00  INFO 23284 --- [main] o.a.c.p.c.ProductControllerTest          : Started ProductControllerTest in 2.523 seconds (process running for 4.201)
+2025-08-15T13:21:31.732+02:00  INFO 15816 --- [main] o.a.c.p.c.ProductControllerTest          : Starting ProductControllerTest using Java 23.0.1 with PID 15816 (started by karel in D:\karel\Examples\productTestAPI)
+2025-08-15T13:21:31.733+02:00  INFO 15816 --- [main] o.a.c.p.c.ProductControllerTest          : No active profile set, falling back to 1 default profile: "default"
+2025-08-15T13:21:33.541+02:00  INFO 15816 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-08-15T13:21:33.542+02:00  INFO 15816 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-08-15T13:21:33.543+02:00  INFO 15816 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-08-15T13:21:33.582+02:00  INFO 15816 --- [main] o.a.c.p.c.ProductControllerTest          : Started ProductControllerTest in 2.298 seconds (process running for 3.612)
+2025-08-15T14:22:04.877+02:00  INFO 12616 --- [main] o.a.c.p.c.ProductControllerTest          : Starting ProductControllerTest using Java 23.0.1 with PID 12616 (started by karel in D:\karel\Examples\productTestAPI)
+2025-08-15T14:22:04.878+02:00  INFO 12616 --- [main] o.a.c.p.c.ProductControllerTest          : No active profile set, falling back to 1 default profile: "default"
+2025-08-15T14:22:07.021+02:00  INFO 12616 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-08-15T14:22:07.021+02:00  INFO 12616 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-08-15T14:22:07.022+02:00  INFO 12616 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-08-15T14:22:07.065+02:00  INFO 12616 --- [main] o.a.c.p.c.ProductControllerTest          : Started ProductControllerTest in 2.659 seconds (process running for 4.115)
